@@ -1,0 +1,21 @@
+{
+  "name": "Juza",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Giorgio Beggiora <giorgio.beggiora@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/giorgiobeggiora/juza",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^5.0.10",
+    "async": "^2.6.0"
+  }
+}

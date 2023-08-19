@@ -1,0 +1,109 @@
+.path-physical a::before {
+	content: " / ";
+}
+
+.path-virtual a,
+.path-physical a {
+	text-decoration: none;
+	color: #333;
+}
+
+.path-virtual a:hover .folder-name,
+.path-physical a:hover .folder-name {
+	text-decoration: underline;
+	color: #333;
+	cursor: pointer;
+}
+
+.sidebar {
+	padding: 1em 0;
+}
+.sidebar .folder {
+	padding: 0 1em;
+}
+.sidebar .folder.liv-0 {
+	font-weight: bold;
+}
+.sidebar .folder.liv-1 {
+	padding-left: 1.5em;
+}
+.sidebar .folder.liv-0:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.sidebar .folder.liv-1:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.sidebar .folder .name {
+	display: block;
+}
+.sidebar .folder .space {
+	position: relative;
+	background-color: green;
+	font-size: 8px;
+	color: white;
+	font-family: verdana;
+}
+.sidebar .folder .space-bar {
+	background-color: blue;
+}
+.sidebar .folder .space-bar::before {
+	content: '\00a0';
+}
+.sidebar .folder .space-used {
+	position: absolute;
+	left: 0.5em;
+}
+.sidebar .folder .space-free {
+	position: absolute;
+	right: 0.5em;
+}
+
+.box .folder {
+	padding: 1em;
+}
+
+.box {
+	height: 100%;
+}
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+
+.box.has-advanced-upload {
+  background-color: white;
+  outline: 2px dashed black;
+  outline-offset: -10px;
+}
+
+.box.has-advanced-upload .box__input {
+  display: none;
+}
+.box.has-advanced-upload .box__dragndrop {
+  display: inline;
+}
+
+.box.is-dragover {
+  background-color: grey;
+}
+
+.box .folder .dir  .fa-folder{
+	color: orange;
+	width: 1.4em;
+	text-align: center;
+}
+.box .folder .file .fa-file   {
+	color: silver;
+	width: 1.4em;
+	text-align: center;
+}
+.box .folder .dir:hover,
+.box .folder .file:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
